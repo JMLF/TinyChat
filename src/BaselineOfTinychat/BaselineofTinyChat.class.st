@@ -1,17 +1,6 @@
 Class {
-	#name : 'BaselineofTinyChat',
+	#name : 'BaselineOfTinyChat',
 	#superclass : 'BaselineOf',
 	#category : 'BaselineOfTinychat',
 	#package : 'BaselineOfTinychat'
 }
-
-{ #category : 'baselines' }
-BaselineofTinyChat >> baseline: spec [ 
-	<baseline>
-
-	spec
-		package: 'Tinychat';
-		package: 'TinyChat-client';
-		package: 'TinyChat-server'
-
-]
