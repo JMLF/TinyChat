@@ -1,12 +1,12 @@
 Class {
-	#name : 'BaselineOfTinyChat',
+	#name : 'BaselineOfTinychat',
 	#superclass : 'BaselineOf',
 	#category : 'BaselineOfTinychat',
 	#package : 'BaselineOfTinychat'
 }
 
 { #category : 'baselines' }
-BaselineOfTinyChat >> baseline: spec [ 
+BaselineOfTinychat >> baseline: spec [ 
 	<baseline>
 
 	spec
