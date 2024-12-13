@@ -54,8 +54,7 @@ TinyChat >> command: aPath argument: anArgument [
 
 { #category : 'initialization' }
 TinyChat >> disconnect [
-self sendNewMessage: (TCMessage from: login text: 'I exited from
-the chat room.').
+self sendNewMessage: (TCMessage from: login text: 'I exited from the chat room.').
 exit := true
 ]
 
@@ -132,9 +131,9 @@ post
 
 { #category : 'as yet unclassified' }
 TinyChat >> start [
-console := TCConsolePresenter attach: self.
-self sendNewMessage: (TCMessage from: login text: 'I joined the
-chat room').
-lastMessageIndex := self readLastMessageID.
-self refreshMessages.
+
+	console := TCConsolePresenter attach: self.
+	self sendNewMessage: (TCMessage from: login text: 'I joined the chat room').
+	lastMessageIndex := self readLastMessageID.
+	self refreshMessages
 ]

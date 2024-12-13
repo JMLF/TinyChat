@@ -20,20 +20,21 @@ TCConsolePresenter class >> attach: aTinyChat [
 | window |
           window := self new chat: aTinyChat.
           window open whenClosedDo: [ aTinyChat disconnect ].
-          ^ window
-]
 
-{ #category : 'layout' }
-TCConsolePresenter class >> defaultLayout [ 
-^ SpBoxLayout newTopToBottom
-      add: list;
-      add: input ;
-      yourself
+          ^ window
 ]
 
 { #category : 'accessing' }
 TCConsolePresenter >> chat: anObject [
 chat:= anObject 
+]
+
+{ #category : 'layout' }
+TCConsolePresenter >> defaultLayout [ 
+^ SpBoxLayout newTopToBottom
+      add: list;
+      add: input ;
+      yourself
 ]
 
 { #category : 'initialization - deprecated' }
